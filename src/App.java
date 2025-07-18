@@ -42,5 +42,13 @@ public class App {
         sellerDao.insert(newSeller);
         System.out.println("new seller: " + newSeller.getId());
 
+        System.out.println();
+
+        System.out.println("teste 5: insert seller");
+        seller = sellerDao.findById(1);
+        seller.setName("nandooooooooooo");
+        sellerDao.update(seller);
+        System.out.println("atualizado");
+
     }
 }
